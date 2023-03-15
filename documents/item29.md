@@ -3,13 +3,7 @@
 JDK가 제공하는 제네릭 타입과 메서드를 사용하는 일은 일반적으로 쉬운 편이지만, `제네릭 타입`을 새로 만드는 일은 조금 더 어렵다.<br>
 
 
-```java
-public interface PhysicalConstants {
-	static final double AVOGADROS_NUMBER   = 6.022_140_857e23;
-	static final double BOLTZMANN_CONSTANT = 1.380_648_52e-23;
-	static final double ELECTRON_MASS      = 9.109_383_56e-31;
-}
-```
+
 Object 기반 스택 - `제네릭`이 가장 절실한 강력 후보
 
 ```java
