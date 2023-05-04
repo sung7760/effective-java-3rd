@@ -7,26 +7,28 @@ import java.util.Set;
 import java.util.function.UnaryOperator;
 
 public class Main {
-    public static void main(String[] args) {
-        Set<String> s1 = Set.of("A", "B", "C", "D");
-        Set<String> s2 = Set.of("E", "F", "G");
-        Set<Integer> s3 = Set.of(1, 2, 3, 4);
-        Set<RawType> s4 = Set.of(new RawType(), new RawType());
 
-        System.out.println(RawType.union(s1, s2));
-        System.out.println(RawType.union(s1, s3));
-        System.out.println(RawType.union(s1, s4));
+    private static final String A = "";
+    public static void main(String[] args) {
+//        Set<String> s1 = Set.of("A", "B", "C", "D");
+//        Set<String> s2 = Set.of("E", "F", "G");
+//        Set<Integer> s3 = Set.of(1, 2, 3, 4);
+//        Set<RawType> s4 = Set.of(new RawType(), new RawType());
+
+//        System.out.println(RawType.union(s1, s2));
+//        System.out.println(RawType.union(s1, s3));
+//        System.out.println(RawType.union(s1, s4));
 
 //        System.out.println(StringType.union(s1, s2));
 //        System.out.println(StringType.union(s1, s3));
 //        System.out.println(StringType.union(s1, s4));
 
 //        System.out.println(GenericType.union(s1, s2));
-//        System.out.println(GenericType.union(s1, s3));
+//        System.out.println(GenericType.union(s3, s3));
 //        System.out.println(GenericType.union(s1, s4));
 
-//        Sample.<Integer>printer().print(1);
-//        Sample.<String>printer().print("");
+//        GenericSingleton.<Integer>printer().print(1);
+//        GenericSingleton.<String>printer().print("test");
 
 //        String[] stringArr = {"A", "B", "C"};
 //        UnaryOperator<String> u1 = IdentityFunction.identityFunction();
@@ -40,10 +42,10 @@ public class Main {
 //            System.out.println(u2.apply(i));
 //        }
 
-//        List<String> list1 = Arrays.asList("1", "2");
-//        System.out.println(RecursiveTypeBound.max(list1));
-//
-//        List<ComparableClass> list2 = Arrays.asList(new ComparableClass(1), new ComparableClass(2));
-//        System.out.println(RecursiveTypeBound.max(list2));
+        List<String> list1 = Arrays.asList("1", "2");
+        System.out.println(RecursiveTypeBound.max(list1));
+
+        List<ComparableClass> list2 = Arrays.asList(new ComparableClass(1), new ComparableClass(2));
+        System.out.println(RecursiveTypeBound.max(list2));
     }
 }
